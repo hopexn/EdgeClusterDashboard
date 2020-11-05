@@ -1,0 +1,11 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+templates/assets/pics/*
+*.swp
+.ipynb_checkpoints
+.DS_Store
+.idea
