@@ -2,7 +2,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
 ipset = {
-    "edge_cluster": "219.223.186.25"
+    "edgecluster": "219.223.186.25"
 }
 
 
@@ -15,7 +15,7 @@ def index(request, page_name):
 
 
 def camera_list(request):
-    url_tpl = "http://" + ipset["edge_cluster"] + ":{}/substream"
+    url_tpl = "http://" + ipset["edgecluster"] + ":{}/substream"
     cam_urls = []
     for i in range(14):
         port = 10001 + i
@@ -27,7 +27,7 @@ def camera_list(request):
 
 def get_camera(request, cam_no):
     cam_no = int(cam_no)
-    url_tpl = "http://" + ipset["edge_cluster"] + ":{}"
+    url_tpl = "http://" + ipset["edgecluster"] + ":{}"
     cam_url = url_tpl.format(10001 + cam_no)
     params = {"cam_url": cam_url, "cam_no": cam_no}
     return render(request, "get_camera.html", params)

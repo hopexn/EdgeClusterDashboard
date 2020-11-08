@@ -5,8 +5,8 @@ import time
 import requests
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--hostname", required=False, type=str, default=socket.gethostname())
-parser.add_argument("--server", required=False, type=str, default="10.103.10.153")
+parser.add_argument("--hostname", type=str, default=socket.gethostname())
+parser.add_argument("--server", type=str, default="10.103.10.153")
 args = parser.parse_args()
 
 while True:
