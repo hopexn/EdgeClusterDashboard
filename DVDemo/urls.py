@@ -22,6 +22,8 @@ from . import view
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'get_camera/(?P<cam_no>(.+))', view.get_camera),
+    url(r'update_ip/(?P<hostname>(.+))', view.update_ip),
+    url(r'get_ip/?(?P<hostname>(.*))/', view.get_ip),
     url(r'^camera_list\.html$', view.camera_list),
     url(r'^(?P<page_name>(.+\.html))$', view.index),
     url(r'^$', view.default)
