@@ -25,7 +25,7 @@ SECRET_KEY = 'o8=xz&50e4ch=88v#s8&pnz+yq71j5%c0$4^(&%^=eu)(k!bae'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.103.10.153','localhost', 'szcluster.mmlab.top', '127.0.0.1', "gnode3", "0.0.0.0"]
+ALLOWED_HOSTS = ['10.103.10.153', 'localhost', 'szcluster.mmlab.top', '127.0.0.1', "gnode3", "0.0.0.0"]
 
 # Application definition
 
@@ -117,9 +117,3 @@ STATIC_URL = '/assets/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "templates/assets")
 ]
-
-MOVIE_TYPE = 0
-CAST_TYPE = 1
-RADIUS0 = 15
-RADIUS1 = 10
-RADIUS2 = 8
